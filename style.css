@@ -25,14 +25,14 @@ body {
 #yellow1 {
   height: 100%;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: slategray;
   position: absolute;
   z-index: 8;
 }
 #yellow2 {
   height: 100%;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: slategray;
   position: absolute;
   z-index: 7;
 }
@@ -58,6 +58,8 @@ body {
   padding: 26px 50px;
   z-index: 10;
   display: flex;
+  background: rgba(135, 207, 235, 0.444);
+  backdrop-filter: blur(5px);
 }
 #nav svg {
   height: 20px;
@@ -83,7 +85,7 @@ body {
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: slategray;
   display: flex;
   align-items: center;
   justify-content: center;
