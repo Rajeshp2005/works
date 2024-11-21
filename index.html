@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/jpeg;base64,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"
+    />
+    <title>ᏔᎧᏒᏦႽ</title>
+  </head>
+  <body>
+    <div id="loader">
+      <div id="yellow1"></div>
+      <div id="yellow2"></div>
+      <video
+        id="myVideo"
+        autoplay
+        muted
+        playbackspeed="2"
+        src="https://cdn.pixabay.com/video/2023/07/24/173102-848555581_large.mp4"
+      ></video>
+
+      <h1>
+        CREATIVE PROFESSIONALS <br /><em>DEDICATED</em> TO CULTURAL <br />
+        <em>STRATEGY</em> AND <em>DESIGN</em>
+      </h1>
+    </div>
+    <div id="nav">
+      <svg fill="none" viewBox="0 0 71 16">
+        <path
+          fill="#000"
+          d="M0 .854h4.124L5.15 5.718c.336 1.548.691 3.95.691 3.95h.04s.375-2.124.73-3.752L7.696.854h3.73l1.085 5.022c.355 1.648.71 3.792.71 3.792h.04s.374-2.402.71-3.99L14.997.854h4.223L15.51 15.05h-4.164l-1.262-6.015a62 62 0 0 1-.494-2.76h-.04s-.237 1.53-.494 2.76L7.833 15.05H3.611zm18.081 14.035 1.697-1.906c-1.065-1.29-1.657-3.017-1.657-4.982 0-4.25 2.762-7.406 7.143-7.406 1.697 0 3.157.477 4.302 1.31L31.263 0l1.223 1.111-1.696 1.926c1.065 1.291 1.657 3.017 1.657 4.964 0 4.249-2.802 7.384-7.183 7.384-1.697 0-3.137-.476-4.282-1.29L19.305 16zm4.46-5.043 4.598-5.202c-.473-.457-1.086-.735-1.854-.735-1.973 0-2.98 1.767-2.98 4.09q0 1.013.236 1.847m5.723-1.847c0-.655-.079-1.29-.257-1.826l-4.578 5.181c.473.457 1.085.715 1.854.715 1.973 0 2.981-1.747 2.981-4.07M32.858.854h7.006c2.88 0 5.328 1.33 5.328 4.228 0 1.628-.829 2.78-2.31 3.455v.06c1.145.437 1.737 1.231 1.974 2.343.374 1.706.058 3.751.573 3.891v.219h-4.066c-.395-.278-.237-2.024-.533-3.295-.258-1.092-.731-1.648-1.934-1.648h-1.914v4.943h-4.124zm4.124 6.294h2.21c1.183 0 1.835-.516 1.835-1.509 0-.933-.592-1.528-1.776-1.528h-2.27zM45.771.854h4.124V5.5L54.159.853h4.737l-5.27 5.717 5.565 8.477h-4.795L50.804 9.43l-.907 1.032v4.585h-4.124z"
+        ></path>
+        <path
+          fill="#000"
+          d="M57.563 10.522h4.223c.139 1.132 1.007 1.667 2.367 1.667.81 0 1.796-.317 1.796-1.171s-.947-1.072-2.683-1.509c-2.367-.595-5.228-1.41-5.228-4.427 0-3.256 2.643-4.487 5.82-4.487 2.92 0 5.605 1.231 5.663 4.329h-4.084c-.119-.775-.671-1.27-1.796-1.27-.908 0-1.54.417-1.54.992 0 .833 1.205.952 3.317 1.468 2.367.577 4.736 1.509 4.736 4.527s-2.743 4.744-6.078 4.744c-3.671 0-6.453-1.587-6.513-4.863"
+        ></path>
+      </svg>
+      <div id="part2">
+        <span class="hide">
+          <a href="#">Project</a>
+          <a href="#">Idea</a>
+          <a href="#">About</a>
+        </span>
+      </div>
+    </div>
+    <div id="main">
+      <div id="page1" data-scroll data-scroll-speed="-2.5">
+        <h1>
+          CREATIVE PROFESSIONALS <br /><em>DEDICATED</em> TO CULTURAL <br />
+          <em>STRATEGY</em> AND <em>DESIGN</em>
+        </h1>
+      </div>
+      <div id="page2" data-scroll data-scroll data-scroll-speed="0">
+        <div
+          class="elem"
+          data-img="https://works.studio/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F136349%2F1727445397-works_converse_fa23_design_02.jpg&w=1920&q=96"
+        >
+          <h2>CONVERSE</h2>
+
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elem"
+          data-img="https://works.studio/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F136349%2F1726609966-works_nike_nfl_2020_design_17.jpg&w=768&q=96"
+        >
+          <h2>Nike NFL</h2>
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elem"
+          data-img="https://works.studio/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F136349%2F1726409479-works_mineralhealth_brand_identity_02.jpg&w=768&q=96"
+        >
+          <h2>Mineral</h2>
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elem"
+          data-img="https://works.studio/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F136349%2F1726170926-works_fvv_branding_04.jpg&w=1920&q=96"
+        >
+          <h2>Future World</h2>
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elem"
+          data-img="https://www.datocms-assets.com/136349/1726591680-works_beyonce_the-lion-king_design_seo.jpg"
+        >
+          <h2>Beyonce</h2>
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+
+            <div class="moving-in">
+              <h5>Creative Direction</h5>
+              <h5>Digital Design</h5>
+              <h5>Art Direction</h5>
+              <h5>Branding and Identity</h5>
+              <h5>Type design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page3" data-scroll></div>
+      <div id="footer">
+        <button>
+          <h2>Back to top <span style="font-size: larger">&uarr;</span></h2>
+          <div id="green"></div>
+        </button>
+        <div id="foot"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
